@@ -50,7 +50,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/util/code-gen-utils"],
+      "outputs": ["{workspaceRoot}/coverage/libs/util/code-gen-utils"],
       "options": {
         "jestConfig": "libs/util/code-gen-utils/jest.config.ts",
         "passWithNoTests": true

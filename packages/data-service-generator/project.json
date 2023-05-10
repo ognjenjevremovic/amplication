@@ -60,14 +60,14 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/packages/data-service-generator"],
+      "outputs": ["{workspaceRoot}/coverage/packages/data-service-generator"],
       "options": {
         "jestConfig": "packages/data-service-generator/jest.config.ts"
       }
     },
     "e2e": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/packages/data-service-generator"],
+      "outputs": ["{workspaceRoot}/coverage/packages/data-service-generator"],
       "options": {
         "jestConfig": "packages/data-service-generator/jest.e2e.config.ts",
         "passWithNoTests": false

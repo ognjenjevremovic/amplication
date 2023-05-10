@@ -116,7 +116,9 @@
         }
       }
     },
-    "deploy": { "executor": "nx:run-commands" }
+    "deploy": {
+      "executor": "nx:run-commands"
+    }
   },
   "tags": []
 }
