@@ -21,7 +21,7 @@
       }
     },
     "build": {
-      "executor": "@nrwl/node:webpack",
+      "executor": "@nx/node:webpack",
       "outputs": ["{options.outputPath}"],
       "options": {
         "generatePackageJson": true,
@@ -51,7 +51,7 @@
       }
     },
     "serve": {
-      "executor": "@nrwl/node:node",
+      "executor": "@nx/node:node",
       "options": {
         "buildTarget": "amplication-plugin-api:build",
         "inspect": true,

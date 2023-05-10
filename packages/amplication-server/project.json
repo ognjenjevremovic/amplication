@@ -35,7 +35,7 @@
       }
     },
     "build": {
-      "executor": "@nrwl/node:webpack",
+      "executor": "@nx/node:webpack",
       "outputs": ["{options.outputPath}"],
       "dependsOn": ["graphql:schema:generate", "graphql:models:generate"],
       "options": {
@@ -70,7 +70,7 @@
       }
     },
     "serve": {
-      "executor": "@nrwl/node:node",
+      "executor": "@nx/node:node",
       "options": {
         "port": 7000,
         "buildTarget": "amplication-server:build"

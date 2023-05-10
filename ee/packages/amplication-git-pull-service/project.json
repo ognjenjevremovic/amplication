@@ -22,7 +22,7 @@
       }
     },
     "build": {
-      "executor": "@nrwl/node:webpack",
+      "executor": "@nx/node:webpack",
       "inputs": ["{projectRoot}/**/*"],
       "outputs": ["{options.outputPath}"],
       "options": {
@@ -47,7 +47,7 @@
       }
     },
     "serve": {
-      "executor": "@nrwl/node:node",
+      "executor": "@nx/node:node",
       "options": {
         "buildTarget": "amplication-git-pull-service:build",
         "inspect": true,
