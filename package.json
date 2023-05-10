@@ -173,7 +173,6 @@
     "@nestjs/cli": "^9.2.0",
     "@nestjs/schematics": "9.1.0",
     "@nestjs/testing": "9.4.0",
-    "@nrwl/js": "16.1.4",
     "@nx-tools/nx-container": "^4.0.3",
     "@nx/cypress": "16.1.4",
     "@nx/devkit": "16.1.4",
