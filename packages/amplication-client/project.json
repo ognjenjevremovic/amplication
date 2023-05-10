@@ -44,7 +44,8 @@
         "styles": ["packages/amplication-client/src/index.scss"],
         "scripts": [],
         "webpackConfig": "packages/amplication-client/webpack.config.js",
-        "isolatedConfig": true
+        "isolatedConfig": true,
+        "babelUpwardRootMode": true
       },
       "configurations": {
         "development": {
