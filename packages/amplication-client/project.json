@@ -98,7 +98,7 @@
       }
     },
     "test": {
-      "executor": "@nrwl/jest:jest",
+      "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/packages/amplication-client"],
       "options": {
         "jestConfig": "packages/amplication-client/jest.config.ts",
