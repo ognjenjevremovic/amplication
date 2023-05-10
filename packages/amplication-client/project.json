@@ -43,7 +43,8 @@
         ],
         "styles": ["packages/amplication-client/src/index.scss"],
         "scripts": [],
-        "webpackConfig": "@nrwl/react/plugins/webpack"
+        "webpackConfig": "packages/amplication-client/webpack.config.js",
+        "isolatedConfig": true
       },
       "configurations": {
         "development": {
