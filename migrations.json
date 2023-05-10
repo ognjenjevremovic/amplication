@@ -29,7 +29,7 @@
       "version": "15.6.3-beta.0",
       "description": "Creates or updates webpack.config.js file with the new options for webpack.",
       "factory": "./src/migrations/update-15-6-3/webpack-config-setup",
-      "package": "@nrwl/react",
+      "package": "@nx/react",
       "name": "react-webpack-config-setup"
     },
     {
@@ -203,9 +203,9 @@
     {
       "cli": "nx",
       "version": "16.0.0-beta.1",
-      "description": "Replace @nrwl/react with @nx/react",
+      "description": "Replace @nx/react with @nx/react",
       "implementation": "./src/migrations/update-16-0-0-add-nx-packages/update-16-0-0-add-nx-packages",
-      "package": "@nrwl/react",
+      "package": "@nx/react",
       "name": "update-16-0-0-add-nx-packages"
     },
     {
