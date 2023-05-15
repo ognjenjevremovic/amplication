@@ -1,0 +1,20 @@
+{
+  "migrations": [
+    {
+      "cli": "nx",
+      "version": "15.6.3-beta.0",
+      "description": "Creates or updates webpack.config.js file with the new options for webpack.",
+      "factory": "./src/migrations/update-15-6-3/webpack-config-setup",
+      "package": "@nrwl/webpack",
+      "name": "webpack-config-setup"
+    },
+    {
+      "cli": "nx",
+      "version": "15.6.3-beta.0",
+      "description": "Creates or updates webpack.config.js file with the new options for webpack.",
+      "factory": "./src/migrations/update-15-6-3/webpack-config-setup",
+      "package": "@nrwl/react",
+      "name": "react-webpack-config-setup"
+    }
+  ]
+}
