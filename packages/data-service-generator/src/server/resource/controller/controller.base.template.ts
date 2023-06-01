@@ -12,6 +12,9 @@ import { ApiNestedQuery } from "../../decorators/api-nested-query.decorator";
 declare interface CREATE_INPUT {}
 declare interface WHERE_INPUT {}
 declare interface WHERE_UNIQUE_INPUT {}
+declare class COUNT_ARGS {
+  where: WHERE_INPUT;
+}
 declare class FIND_MANY_ARGS {
   where: WHERE_INPUT;
 }
@@ -26,6 +29,7 @@ declare interface Select {}
 
 declare interface SERVICE {
   create(args: { data: CREATE_INPUT; select: Select }): Promise<ENTITY>;
+  count(args: { where: WHERE_INPUT; select: Select }): Promise<number>;
   findMany(args: { where: WHERE_INPUT; select: Select }): Promise<ENTITY[]>;
   findOne(args: {
     where: WHERE_UNIQUE_INPUT;
@@ -54,6 +58,17 @@ export class CONTROLLER_BASE {
   ): Promise<ENTITY> {
     return await this.service.create({
       data: CREATE_DATA_MAPPING,
+      select: SELECT,
+    });
+  }
+
+  @common.Get()
+  @swagger.ApiOkResponse({ type: Number })
+  @ApiNestedQuery(COUNT_ARGS)
+  async COUNT_ENTITY_FUNCTION(@common.Req() request: Request): Promise<number> {
+    const args = plainToClass(COUNT_ARGS, request.query);
+    return this.service.count({
+      ...args,
       select: SELECT,
     });
   }

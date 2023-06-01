@@ -109,6 +109,7 @@ export async function createControllerModules(
       entityDTOs.updateInput,
       DATA_ID
     ),
+    COUNT_ARGS: entityDTOs.countArgs.id,
     FIND_MANY_ARGS: entityDTOs.findManyArgs.id,
     WHERE_INPUT: entityDTOs.whereInput.id,
     CREATE_ENTITY_FUNCTION: createEntityId,

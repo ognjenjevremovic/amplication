@@ -80,6 +80,7 @@ export async function createResolverModules(
     createArgs,
     updateArgs,
     deleteArgs,
+    countArgs,
     findManyArgs,
     findOneArgs,
   } = entityDTOs;
@@ -108,6 +109,7 @@ export async function createResolverModules(
     CREATE_ARGS: createArgs?.id,
     UPDATE_ARGS: updateArgs?.id,
     DELETE_ARGS: deleteArgs.id,
+    COUNT_ARGS: countArgs.id,
     FIND_MANY_ARGS: findManyArgs.id,
     FIND_ONE_ARGS: findOneArgs.id,
     CREATE_DATA_MAPPING: createDataMapping(
